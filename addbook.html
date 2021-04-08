@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 style="font-family:'Times New Roman', Times, serif"><center>BOOK MANAGEMENT SYSTEM</center></h1>
+    <div class="anchor">  
+        <a id="p1" href="booklist.html">BookList</a>
+        <a id="p1" href="addbook.html">AddBook</a>
+    </div><br><br>
+    <div><center>
+        <fieldset style="width: 80px;">
+            <legend>Add a Book</legend><br>
+            <label for="id">Book Id:</label>
+            <input type="number" id="id">
+            <br><br>
+            <label for="name">Book Name:</label>
+            <input type="text" id="name">
+            <br><br>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating">
+            <br><br>
+            <label for="price">Price:</label>
+            <input type="number" id="price">
+            <br><br>
+            <label for="author">Book Author:</label>
+            <input type="text" id="author">
+            <br><br>
+            <Button id="btn" value="Add Book" onclick="addBook()">Add</Button> 
+        </fieldset></center>
+    </div><br><br>
+    <script src="./bookManagerClass.js" > </script>
+</body>
+</html>

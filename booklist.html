@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>   
+<body> 
+    <h1 style="font-family:'Times New Roman', Times, serif"><center>BOOK MANAGEMENT SYSTEM</center></h1>
+    <div class="anchor"> 
+    <a id="p1" href="booklist.html">BookList</a>
+    <a id="p1" href="addbook.html">AddBook</a>
+    </div><br><br>
+    <div><center>
+        <label for="type">Search Type:</label>
+        <select id="select" onclick="select()" >
+            <option value="BookId">Book Id</option>
+            <option value="BookName" >Book Name</option>
+            <option value="Rating" >Rating</option>
+            <option value="price" >Price</option>
+            <option value="AuthorName" >Author Name</option>
+          </select>
+          <input type="text" id="Particulars" placeholder="Enter the Particulars" required>
+          <button onclick="search()">Search</button>
+          <button id = "show" onclick="show()">Show All</button>
+        </div><br><br>
+        <div class="bottomRight">
+            <button id = "clear" onclick="clear123()" >Clear Local Storage</button>
+        </div>
+          <center><table border=1 id = "myTable" >
+            <tr>
+                <td><center><B>BOOK ID:</B></center></td>
+                <td><center><B>BOOK NAME:</B></center></td>
+                <td><center><B>RATING:</B></center></td>
+                <td><center><B>PRICE:</B></center></td>
+                <td><center><B>AUTHOR:</B></center></td>
+                <td><center><B>ACTION:</B></center></td>
+            </tr>
+            <tbody id="entries">
+    
+            </tbody>
+        </table></center>
+</div>
+    <script src="./bookManagerClass.js"></script>
+</body>
+</html>

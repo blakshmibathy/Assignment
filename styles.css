@@ -1,0 +1,22 @@
+.bottomRight{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 18px;
+}
+#p1{
+    text-decoration: none;
+   }
+.anchor
+    {
+     position: fixed;
+     right: 100px;
+     word-spacing: 40px;
+    }
+body
+    {
+    background-image: url('book.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: 100% 100%;
+    }
